@@ -235,10 +235,10 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {0},--Sudo users
+    sudo_users = {0,tonumber(our_id)},--Sudo users
 	datak = {185532812},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[DaTaK v4
+    about_text = [[datak v5.1
 An advanced administration bot based on TG-CLI written in Lua
 
 https://github.com/DaTaK-BoT/DaTaK
