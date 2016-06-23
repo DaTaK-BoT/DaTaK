@@ -204,6 +204,9 @@ function load_config( )
   for v,user in pairs(config.sudo_users) do
     print("Sudo user: " .. user)
   end
+  for v,user in pairs(config.datak) do
+    print("datak user: " .. user)
+  end
   return config
 end
 
@@ -232,32 +235,22 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {0},--Sudo users
+	datak = {185532812},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
+    about_text = [[DaTaK v4
 An advanced administration bot based on TG-CLI written in Lua
 
-https://github.com/SEEDTEAM/TeleSeed
+https://github.com/DaTaK-BoT/DaTaK
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
-
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
+List Sudo and Admin:
+@joker_admin_2 [185532812]
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@datak_team [Support]
 
 Our website 
-http://teleseed.seedteam.org/
+http://datak.ir/
 ]],
     help_text_realm = [[
 Realm Commands:
